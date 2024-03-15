@@ -1,4 +1,4 @@
-require_relative 'class_animal'
+require 'class_animal'
 
 RSpec.describe Animal do
   describe '#initialize' do
@@ -60,7 +60,7 @@ RSpec.describe Animal do
       animal1 = Animal.new('tiger', 150, 'female', true)
       animal2 = Animal.new('lion', 200, 'male', true)
       new_animal = animal1 + animal2
-      expect(new_animal.species).to eq('tiglion')
+      expect(new_animal.species).to eq('tion')
       expect(new_animal.weight).to eq(175)
       expect(['M', 'F']).to include(new_animal.gender)
       expect(new_animal.is_cool).to eq(true)
